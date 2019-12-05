@@ -1,4 +1,18 @@
-# Pruebas
+# Pruebas Unitarias
+
+Sección dedicada a las pruebas unitarias propiamente, son pruebas muy básicas.
+* Se prueba:
+1. Strings.
+2. Números.
+3. Booleanos.
+4. Arreglos.
+5. Clases.
+6. Cobertura de nuestras pruebas..
+
+La cobertura sobre las pruebas, ayudará a saber que tantas líneas del código están cubiertas y respaldadas por pruebas unitarias.
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
 
