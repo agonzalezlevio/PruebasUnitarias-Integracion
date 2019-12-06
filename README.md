@@ -1,16 +1,15 @@
 # Pruebas Unitarias
 
 Sección dedicada a las pruebas unitarias propiamente, son pruebas muy básicas.
-* Se prueba:
+Se prueban:
 1. Strings.
 2. Números.
 3. Booleanos.
 4. Arreglos.
 5. Clases.
-6. Cobertura de nuestras pruebas..
+6. Cobertura de pruebas (Test Coverage).
 
 La cobertura sobre las pruebas, ayudará a saber que tantas líneas del código están cubiertas y respaldadas por pruebas unitarias.
-
 
 
 
