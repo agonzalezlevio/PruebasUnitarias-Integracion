@@ -10,8 +10,8 @@ describe('Pruebas de Arreglos', () => {
         expect(resp.length).toBeGreaterThanOrEqual(3);
 
     });
-
-    it('Debe de existir un Plátano y una Pera', () => {
+    // Saltar una prueba con una 'x' al inicio
+    xit('Debe de existir un Plátano y una Pera', () => {
 
         const resp: any[] = obtenerFrutas();
 
