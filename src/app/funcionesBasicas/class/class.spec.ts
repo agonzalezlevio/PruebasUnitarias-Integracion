@@ -58,4 +58,14 @@ describe('Pruebas de clase', () => {
 
     });
 
+    // Correción tras el Test Coverage
+    it('Debe de retornar 0 de vida, si recibe 100 de daño o más', () => {
+
+        const resp = jugador.recibeDamage(101);
+
+        expect(resp).toBe(0);
+
+    });
+
+
 });
