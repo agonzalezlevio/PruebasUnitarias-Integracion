@@ -3,6 +3,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { By } from '@angular/platform-browser';
 import { RouterOutlet, RouterLinkWithHref } from '@angular/router';
+import { NavbarComponent } from './funcionesAvanzadas/navbar/navbar.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -12,8 +14,11 @@ describe('AppComponent', () => {
         RouterTestingModule.withRoutes([])
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        // NavbarComponent
       ],
+      // Ignorar componentes que no conozca
+      schemas: [NO_ERRORS_SCHEMA]
     }).compileComponents();
   }));
 
@@ -38,23 +43,6 @@ describe('AppComponent', () => {
 
   });
 
-  // Confirmar que exista un routerLink hacia el componente médico
-  it('Debe de tener un link a la página de médicos', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const elementos = fixture.debugElement.queryAll(By.directive(RouterLinkWithHref));
-
-    let existe = false;
-
-    for (const elem of elementos) {
-
-      if (elem.attributes.routerLink === '/medicos') {
-        existe = true;
-        break;
-      }
-    }
-    expect(existe).toBeTruthy();
-
-  });
 
 
 
